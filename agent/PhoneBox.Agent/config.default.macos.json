@@ -23,6 +23,8 @@
   "cursor": { "sessions": false },
   // Antigravity chats on the AI sessions widget (off by default)
   "antigravity": { "sessions": false, "shareSessionTitles": false },
+  // Ollama Cloud for the Ollama widget: paste an API key from ollama.com/settings/keys (it stays on this computer)
+  "ollama": { "apiKey": null },
   // Live Codex quotas read through the Codex CLI (off by default; Settings › General › AI quotas & CodexBar)
   "codexBar": { "codexLiveQuota": false },
   // OpenCode permission prompts on the phone: Allow (once or always) and Deny, read from OpenCode's

@@ -878,7 +878,9 @@ window.PhoneBoxLocaleData = Object.assign(window.PhoneBoxLocaleData || {}, {
       "s.pair.noHosts": "沒有在電腦上找到 LAN 或 Tailscale 地址，所以手機無法連接。",
       "s.pair.copy": "複製配對連結",
       "s.pair.expired": "過期。關閉並重新開始。",
-      "s.pair.expires": "過期 {time}."
+      "s.pair.expires": "過期 {time}.",
+      "s.ollama.title": "Ollama Cloud",
+      "s.ollama.key": "API 金鑰",
     },
     "catalog": {
       "Only this category (its category in Settings; empty = all)": "僅此分類（設定中的分類；留空 = 全部）",
@@ -1572,7 +1574,9 @@ window.PhoneBoxLocaleData = Object.assign(window.PhoneBoxLocaleData || {}, {
       "🔔 Doorbell → notification": "門鈴",
       "🔥 CPU busy → notification": "🔥 CPU 忙",
       "🔴 On air while the mic is on": "🔴 在麥克風開啟時播放",
-      "🕙 Evenings → calm page": "晚上 → 平靜的頁面"
+      "🕙 Evenings → calm page": "晚上 → 平靜的頁面",
+      "Ollama Cloud": "Ollama Cloud",
+      "Ollama Cloud plan, credit balance, what the last day and week cost and how long the balance lasts at that rate.": "Ollama Cloud 方案、餘額、最近一天与一週的花費，以及以此速度餘額還能用多久。",
     },
     "panel": {
       "% load": "負載",
@@ -1850,6 +1854,7 @@ window.PhoneBoxLocaleData = Object.assign(window.PhoneBoxLocaleData || {}, {
       "{n}% power": "{n}電力",
       "{n}-day": "{n}日",
       "{n}-hour": "{n}時間"
+,      "Add an Ollama API key in Settings › General": "在「設定 › 一般」中新增 Ollama API 金鑰",
     }
   }
 });

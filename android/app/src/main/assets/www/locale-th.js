@@ -878,7 +878,9 @@ window.PhoneBoxLocaleData = Object.assign(window.PhoneBoxLocaleData || {}, {
       "s.pair.noHosts": "ไม่มีที่อยู่ LAN หรือ Tailscale ที่พบบนคอมพิวเตอร์นี้ โทรศัพท์จึงไม่สามารถเชื่อมต่อได้",
       "s.pair.copy": "คัดลอกลิงก์การจับคู่",
       "s.pair.expired": "หมดอายุแล้ว ปิดและเริ่มใหม่",
-      "s.pair.expires": "หมดอายุใน {time}"
+      "s.pair.expires": "หมดอายุใน {time}",
+      "s.ollama.title": "Ollama Cloud",
+      "s.ollama.key": "คีย์ API",
     },
     "catalog": {
       "Only this category (its category in Settings; empty = all)": "เฉพาะหมวดหมู่นี้ (หมวดหมู่ในการตั้งค่า; ว่าง = ทั้งหมด)",
@@ -1572,7 +1574,9 @@ window.PhoneBoxLocaleData = Object.assign(window.PhoneBoxLocaleData || {}, {
       "🔔 Doorbell → notification": "แจ้งเตือน",
       "🔥 CPU busy → notification": "🔥 CPU กำลังทำงาน",
       "🔴 On air while the mic is on": "🔴 ออกอากาศในขณะที่ไมโครโฟนเปิด",
-      "🕙 Evenings → calm page": "ตอนเย็น"
+      "🕙 Evenings → calm page": "ตอนเย็น",
+      "Ollama Cloud": "Ollama Cloud",
+      "Ollama Cloud plan, credit balance, what the last day and week cost and how long the balance lasts at that rate.": "แพ็กเกจ Ollama Cloud ยอดเครดิต ค่าใช้จ่ายของวันและสัปดาห์ล่าสุด และยอดคงเหลือจะอยู่ได้อีกกี่วันในอัตรานี้",
     },
     "panel": {
       "% load": "ค่า",
@@ -1850,6 +1854,7 @@ window.PhoneBoxLocaleData = Object.assign(window.PhoneBoxLocaleData || {}, {
       "{n}% power": "{n}กำลัง%",
       "{n}-day": "{n}วันนี้",
       "{n}-hour": "{n}ชั่วโมง"
+,      "Add an Ollama API key in Settings › General": "เพิ่มคีย์ API ของ Ollama ในการตั้งค่า › ทั่วไป",
     }
   }
 });

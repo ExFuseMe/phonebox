@@ -88,6 +88,7 @@
       phones: [], calendars: [],
       homeAssistant: { url: null, token: null },
       obs: { enabled: true, url: 'ws://127.0.0.1:4455', password: null },
+      ollama: { apiKey: null },
     };
     c = JSON.parse(JSON.stringify(c, (_, v) => v === null ? undefined : v)); // the agent leaves unset (null) settings out
     store.set('pb-demo-config', c);
@@ -211,6 +212,13 @@
       // the microphone is "in use" for 20 s of every minute, to show the On air widget
       privacy: (() => { const on = (now() / 1000) % 60 < 20; return { mic: on, camera: false, micApps: on ? ['Zoom'] : [], cameraApps: [] }; })(),
       obs: { streaming: !!obs.streamingSince, recording: !!obs.recordingSince, recordPaused: obs.paused },
+      ollama: {
+        plan: 'Free', allowanceUsd: 0, includedLeftUsd: 0, purchasedUsd: 19.39, availableUsd: 19.39,
+        dayUsd: 0.59, weekUsd: 0.59, requests24h: 391, requests7d: 391, inputTokens7d: 65868713, cachedTokens7d: 64434084,
+        outputTokens7d: 307598, burnPerDay: 0.0843, runwayDays: 230, periodEndsAt: now() + 29 * 86400e3,
+        hours: [0, 0, 0, 0, 0, 0, 0.02, 0.05, 0.11, 0.08, 0.03, 0, 0, 0.14, 0.23, 0.09, 0.05, 0.12, 0.07, 0.02, 0.04, 0.09, 0.03, 0.01],
+        updatedAt: now() - 42000, error: null,
+      },
       toggles: { ...toggles, ...Object.fromEntries(muteKeys.map((id) => [id, audio.muted])) },
       // a face counts only for the list it was made for (an edited list starts over)
       cycles: Object.fromEntries(Object.entries(cycles).filter(([id, v]) => cycleLists[id] === v.list).map(([id, v]) => [id, v.target])),
@@ -304,7 +312,9 @@
     return {
       sessions: [s(1, 'claude', 'api-gateway', 'busy', 4), s(2, 'claude', 'docs-site', 'waiting', 2, 'approve a file edit'), s(3, 'codex', 'mobile-app', 'busy', 11),
         s(4, 'claude', 'infra', 'shell', 1), s(5, 'claude', 'blog-engine', 'idle', 38), s(6, 'codex', 'data-pipeline', 'idle', 74), s(7, 'claude', 'design-system', 'idle', 125),
-        s(8, 'cursor', 'phonebox', 'busy', 3), s(9, 'cursor', 'fueltrack', 'idle', 1), s(10, 'antigravity', 'phonebox', 'busy', 2)],
+        s(8, 'cursor', 'phonebox', 'busy', 3), s(9, 'cursor', 'fueltrack', 'idle', 1), s(10, 'antigravity', 'phonebox', 'busy', 2),
+      { ...s(11, 'dsh', 'phonebox-src', 'busy', 1), title: 'Ollama Cloud widget', model: 'deepseek-v4.1-flash', inputTokens: 77457, outputTokens: 28452,
+        cachedInputTokens: 1578210, totalTokens: 1684119, lastInputTokens: 108503, contextWindow: 1000000, turnStartedAt: n - 30000 }],
       github: { user: 'octocat', notifications: 7, error: null, updatedAt: n - 90e3,
         reviewRequests: [pr('acme/api', 412, 'Rate limiter for public endpoints', null, null, false, 'hubot'), pr('acme/web', 1288, 'Dark mode for the dashboard', null, null, false, 'monalisa'),
           pr('acme/infra', 77, 'Move staging to a new region', null, null, false, 'hubot')],

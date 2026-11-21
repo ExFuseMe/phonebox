@@ -405,7 +405,9 @@ window.PhoneBoxLocaleData = Object.assign(window.PhoneBoxLocaleData || {}, {
       "s.pair.noHosts": "Bu bilgisayarda LAN veya Tailscale adresi bulunmadı, bu yüzden telefonun bağlanacak bir şeyi yok.",
       "s.pair.copy": "Çiftleştirme bağlantısını kopyala",
       "s.pair.expired": "Süre doldu.",
-      "s.pair.expires": "{time}'de sona erer."
+      "s.pair.expires": "{time}'de sona erer.",
+      "s.ollama.title": "Ollama Cloud",
+      "s.ollama.key": "API anahtarı",
     },
     "catalog": {
       "Only this category (its category in Settings; empty = all)": "Yalnızca bu kategori (Ayarlar'daki kategorisi; boş = tümü)",
@@ -1094,7 +1096,9 @@ window.PhoneBoxLocaleData = Object.assign(window.PhoneBoxLocaleData || {}, {
       "🔔 Doorbell → notification": "- Kapı zilli.",
       "🔥 CPU busy → notification": "🔥 CPU meşgul → bildirim",
       "🔴 On air while the mic is on": "🔴 Mikrofon açıkken yayında",
-      "🕙 Evenings → calm page": "1986.  Resmî site"
+      "🕙 Evenings → calm page": "1986.  Resmî site",
+      "Ollama Cloud": "Ollama Cloud",
+      "Ollama Cloud plan, credit balance, what the last day and week cost and how long the balance lasts at that rate.": "Ollama Cloud planı, kredi bakiyesi, son gün ve haftanın maliyeti ve bu hızda bakiyenin kaç gün yeteceği.",
     },
     "panel": {
       "% load": "% yükleme",
@@ -1372,6 +1376,7 @@ window.PhoneBoxLocaleData = Object.assign(window.PhoneBoxLocaleData || {}, {
       "{n}% power": "{n}% güç",
       "{n}-day": "{n} - gün",
       "{n}-hour": "{n} - saat"
+,      "Add an Ollama API key in Settings › General": "Ayarlar › Genel bölümünde bir Ollama API anahtarı ekleyin",
     }
   }
 });

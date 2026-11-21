@@ -426,7 +426,9 @@ window.PhoneBoxLocaleData = Object.assign(window.PhoneBoxLocaleData || {}, {
       "s.pair.noHosts": "Auf diesem Computer wurde keine LAN- oder Tailscale-Adresse gefunden, sodass das Telefon keine Verbindung herstellen kann.",
       "s.pair.copy": "Kopieren Sie den Pairing-Link",
       "s.pair.expired": "Schließen Sie die Seite und starten Sie erneut.",
-      "s.pair.expires": "Abläuft in 1 Woche {time}."
+      "s.pair.expires": "Abläuft in 1 Woche {time}.",
+      "s.ollama.title": "Ollama Cloud",
+      "s.ollama.key": "API-Schlüssel",
     },
     "catalog": {
       "Only this category (its category in Settings; empty = all)": "Nur diese Kategorie (ihre Kategorie in den Einstellungen; leer = alle)",
@@ -1115,7 +1117,9 @@ window.PhoneBoxLocaleData = Object.assign(window.PhoneBoxLocaleData || {}, {
       "🔔 Doorbell → notification": "🔔 Türklingel → Benachrichtigung",
       "🔥 CPU busy → notification": "🔥 CPU besetzt → Benachrichtigung",
       "🔴 On air while the mic is on": "🔴 Auf der Luft, während das Mikrofon eingeschaltet ist",
-      "🕙 Evenings → calm page": "et Abende → ruhige Seite"
+      "🕙 Evenings → calm page": "et Abende → ruhige Seite",
+      "Ollama Cloud": "Ollama Cloud",
+      "Ollama Cloud plan, credit balance, what the last day and week cost and how long the balance lasts at that rate.": "Ollama-Cloud-Tarif, Guthaben, Kosten des letzten Tages und der letzten Woche und wie lange das Guthaben bei diesem Tempo reicht.",
     },
     "panel": {
       "% load": "% Last",
@@ -1393,6 +1397,7 @@ window.PhoneBoxLocaleData = Object.assign(window.PhoneBoxLocaleData || {}, {
       "{n}% power": "{n}% Leistung",
       "{n}-day": "{n} -day",
       "{n}-hour": "{n} -hour"
+,      "Add an Ollama API key in Settings › General": "Ollama-API-Schlüssel unter Einstellungen › Allgemein hinzufügen",
     }
   },
   "fr": {
@@ -1809,7 +1814,9 @@ window.PhoneBoxLocaleData = Object.assign(window.PhoneBoxLocaleData || {}, {
       "s.pair.noHosts": "Aucune adresse LAN ou Tailscale n'a été trouvée sur cet ordinateur, le téléphone n'a donc rien à se connecter.",
       "s.pair.copy": "Copier le lien d'appariement",
       "s.pair.expired": "Fermez et recommencez.",
-      "s.pair.expires": "Expire dans {time}."
+      "s.pair.expires": "Expire dans {time}.",
+      "s.ollama.title": "Ollama Cloud",
+      "s.ollama.key": "Clé API",
     },
     "catalog": {
       "Only this category (its category in Settings; empty = all)": "Seulement cette catégorie (sa catégorie dans les réglages ; vide = toutes)",
@@ -2498,7 +2505,9 @@ window.PhoneBoxLocaleData = Object.assign(window.PhoneBoxLocaleData || {}, {
       "🔔 Doorbell → notification": "🔔 Sonnette → notification",
       "🔥 CPU busy → notification": "🔥 CPU occupé → notification",
       "🔴 On air while the mic is on": "🔴 En direct lorsque le micro est activé",
-      "🕙 Evenings → calm page": "et Soirées → calme page"
+      "🕙 Evenings → calm page": "et Soirées → calme page",
+      "Ollama Cloud": "Ollama Cloud",
+      "Ollama Cloud plan, credit balance, what the last day and week cost and how long the balance lasts at that rate.": "Offre Ollama Cloud, solde de crédits, coût du dernier jour et de la semaine, et durée du solde à ce rythme.",
     },
     "panel": {
       "% load": "% de charge",
@@ -2776,6 +2785,7 @@ window.PhoneBoxLocaleData = Object.assign(window.PhoneBoxLocaleData || {}, {
       "{n}% power": "{n} % de puissance",
       "{n}-day": "{n} -day",
       "{n}-hour": "{n} -heure"
+,      "Add an Ollama API key in Settings › General": "Ajoutez une clé API Ollama dans Réglages › Général",
     }
   },
   "es": {
@@ -3192,7 +3202,9 @@ window.PhoneBoxLocaleData = Object.assign(window.PhoneBoxLocaleData || {}, {
       "s.pair.noHosts": "No se encontró ninguna dirección LAN o Tailscale en este equipo, por lo que el teléfono no tiene nada a qué conectarse.",
       "s.pair.copy": "Copia el enlace de emparejamiento",
       "s.pair.expired": "Cierra y vuelve a empezar.",
-      "s.pair.expires": "Expira en 1 año {time}."
+      "s.pair.expires": "Expira en 1 año {time}.",
+      "s.ollama.title": "Ollama Cloud",
+      "s.ollama.key": "Clave de API",
     },
     "catalog": {
       "Only this category (its category in Settings; empty = all)": "Solo esta categoría (su categoría en Ajustes; vacío = todas)",
@@ -3881,7 +3893,9 @@ window.PhoneBoxLocaleData = Object.assign(window.PhoneBoxLocaleData || {}, {
       "🔔 Doorbell → notification": "🔔 Timbre → notificación",
       "🔥 CPU busy → notification": "🔥 CPU ocupado → notificación",
       "🔴 On air while the mic is on": "🔴 En el aire mientras el micrófono está encendido",
-      "🕙 Evenings → calm page": "ö Noches → página tranquila"
+      "🕙 Evenings → calm page": "ö Noches → página tranquila",
+      "Ollama Cloud": "Ollama Cloud",
+      "Ollama Cloud plan, credit balance, what the last day and week cost and how long the balance lasts at that rate.": "Plan de Ollama Cloud, saldo de créditos, coste del último día y de la semana y cuánto dura el saldo a ese ritmo.",
     },
     "panel": {
       "% load": "% de carga",
@@ -4159,6 +4173,7 @@ window.PhoneBoxLocaleData = Object.assign(window.PhoneBoxLocaleData || {}, {
       "{n}% power": "{n} % de potencia",
       "{n}-day": "{n} -day",
       "{n}-hour": "{n} -hora"
+,      "Add an Ollama API key in Settings › General": "Añade una clave de API de Ollama en Ajustes › General",
     }
   },
   "it": {
@@ -4575,7 +4590,9 @@ window.PhoneBoxLocaleData = Object.assign(window.PhoneBoxLocaleData || {}, {
       "s.pair.noHosts": "Nessun indirizzo LAN o Tailscale è stato trovato su questo computer, quindi il telefono non ha nulla a cui connettersi.",
       "s.pair.copy": "Copia il link di abbinamento",
       "s.pair.expired": "Chiudere e ricominciare da capo.",
-      "s.pair.expires": "Scade in 1 giorno {time}."
+      "s.pair.expires": "Scade in 1 giorno {time}.",
+      "s.ollama.title": "Ollama Cloud",
+      "s.ollama.key": "Chiave API",
     },
     "catalog": {
       "Only this category (its category in Settings; empty = all)": "Solo questa categoria (la sua categoria nelle Impostazioni; vuoto = tutte)",
@@ -5264,7 +5281,9 @@ window.PhoneBoxLocaleData = Object.assign(window.PhoneBoxLocaleData || {}, {
       "🔔 Doorbell → notification": "🔔 Campanello → notifica",
       "🔥 CPU busy → notification": "🔥 CPU occupato → notifica",
       "🔴 On air while the mic is on": "🔴 In onda mentre il microfono è acceso",
-      "🕙 Evenings → calm page": "1 Serate → pagina calma"
+      "🕙 Evenings → calm page": "1 Serate → pagina calma",
+      "Ollama Cloud": "Ollama Cloud",
+      "Ollama Cloud plan, credit balance, what the last day and week cost and how long the balance lasts at that rate.": "Piano Ollama Cloud, saldo crediti, costo dell'ultimo giorno e della settimana e quanto dura il saldo a questo ritmo.",
     },
     "panel": {
       "% load": "% di carico",
@@ -5542,6 +5561,7 @@ window.PhoneBoxLocaleData = Object.assign(window.PhoneBoxLocaleData || {}, {
       "{n}% power": "{n}% potenza",
       "{n}-day": "{n} -day",
       "{n}-hour": "{n} -ora"
+,      "Add an Ollama API key in Settings › General": "Aggiungi una chiave API Ollama in Impostazioni › Generale",
     }
   },
   "pt": {
@@ -5958,7 +5978,9 @@ window.PhoneBoxLocaleData = Object.assign(window.PhoneBoxLocaleData || {}, {
       "s.pair.noHosts": "Nenhum endereço LAN ou Tailscale foi encontrado neste computador, portanto o telefone não tem nada para se conectar.",
       "s.pair.copy": "Copie o link de emparelhamento",
       "s.pair.expired": "Feche e comece novamente.",
-      "s.pair.expires": "Expira em 1 ano {time}."
+      "s.pair.expires": "Expira em 1 ano {time}.",
+      "s.ollama.title": "Ollama Cloud",
+      "s.ollama.key": "Chave de API",
     },
     "catalog": {
       "Only this category (its category in Settings; empty = all)": "Só esta categoria (a sua categoria nas Definições; vazio = todas)",
@@ -6647,7 +6669,9 @@ window.PhoneBoxLocaleData = Object.assign(window.PhoneBoxLocaleData || {}, {
       "🔔 Doorbell → notification": "🔔 Campanha → notificação",
       "🔥 CPU busy → notification": "🔥 CPU ocupado → notificação",
       "🔴 On air while the mic is on": "🔴 No ar enquanto o microfone está ligado",
-      "🕙 Evenings → calm page": "1 Noites → página calma"
+      "🕙 Evenings → calm page": "1 Noites → página calma",
+      "Ollama Cloud": "Ollama Cloud",
+      "Ollama Cloud plan, credit balance, what the last day and week cost and how long the balance lasts at that rate.": "Plano Ollama Cloud, saldo de créditos, custo do último dia e da semana e quanto o saldo dura a esse ritmo.",
     },
     "panel": {
       "% load": "% de carga",
@@ -6925,6 +6949,7 @@ window.PhoneBoxLocaleData = Object.assign(window.PhoneBoxLocaleData || {}, {
       "{n}% power": "{n}% de potência",
       "{n}-day": "{n} -day",
       "{n}-hour": "{n} - hora"
+,      "Add an Ollama API key in Settings › General": "Adicione uma chave de API da Ollama em Configurações › Geral",
     }
   },
   "pt-BR": {
@@ -6936,13 +6961,17 @@ window.PhoneBoxLocaleData = Object.assign(window.PhoneBoxLocaleData || {}, {
       "s.pair.noHosts": "Nenhum endereço LAN ou Tailscale foi encontrado neste computador, portanto o telefone não tem nada para se conectar.",
       "s.pair.copy": "Copie o link de emparelhamento",
       "s.pair.expired": "Feche e comece novamente.",
-      "s.pair.expires": "Expira em 1 ano {time}."
+      "s.pair.expires": "Expira em 1 ano {time}.",
+      "s.ollama.title": "Ollama Cloud",
+      "s.ollama.key": "Chave de API",
     },
     "catalog": {
       "1": "1",
       "2": "2",
       "3": "3",
-      "TRY": "TRY"
+      "TRY": "TRY",
+      "Ollama Cloud": "Ollama Cloud",
+      "Ollama Cloud plan, credit balance, what the last day and week cost and how long the balance lasts at that rate.": "Plano Ollama Cloud, saldo de créditos, custo do último dia e da semana e quanto o saldo dura nesse ritmo.",
     }
   },
   "nl": {
@@ -7359,7 +7388,9 @@ window.PhoneBoxLocaleData = Object.assign(window.PhoneBoxLocaleData || {}, {
       "s.pair.noHosts": "Er is geen LAN- of Tailscale-adres gevonden op deze computer, dus de telefoon kan geen verbinding maken.",
       "s.pair.copy": "Kopieer de koppelingslink",
       "s.pair.expired": "Sluit de browser en start opnieuw.",
-      "s.pair.expires": "Vervalt in 1 week {time}."
+      "s.pair.expires": "Vervalt in 1 week {time}.",
+      "s.ollama.title": "Ollama Cloud",
+      "s.ollama.key": "API-sleutel",
     },
     "catalog": {
       "Only this category (its category in Settings; empty = all)": "Alleen deze categorie (de categorie in Instellingen; leeg = alle)",
@@ -8048,7 +8079,9 @@ window.PhoneBoxLocaleData = Object.assign(window.PhoneBoxLocaleData || {}, {
       "🔔 Doorbell → notification": "🔔 Deurbel → kennisgeving",
       "🔥 CPU busy → notification": "🔥 CPU Bezet → melding",
       "🔴 On air while the mic is on": "🔴 Op de lucht terwijl de microfoon aan staat",
-      "🕙 Evenings → calm page": "ö Avonden → kalme pagina"
+      "🕙 Evenings → calm page": "ö Avonden → kalme pagina",
+      "Ollama Cloud": "Ollama Cloud",
+      "Ollama Cloud plan, credit balance, what the last day and week cost and how long the balance lasts at that rate.": "Ollama Cloud-abonnement, kredietsaldo, kosten van de laatste dag en week en hoelang het saldo zo meegaat.",
     },
     "panel": {
       "% load": "% lading",
@@ -8326,6 +8359,7 @@ window.PhoneBoxLocaleData = Object.assign(window.PhoneBoxLocaleData || {}, {
       "{n}% power": "{n}% vermogen",
       "{n}-day": "{n} -dag",
       "{n}-hour": "{n} -uur"
+,      "Add an Ollama API key in Settings › General": "Voeg een Ollama-API-sleutel toe in Instellingen › Algemeen",
     }
   },
   "pl": {
@@ -8742,7 +8776,9 @@ window.PhoneBoxLocaleData = Object.assign(window.PhoneBoxLocaleData || {}, {
       "s.pair.noHosts": "Na tym komputerze nie znaleziono adresu LAN ani Tailscale, więc telefon nie ma z czym się połączyć.",
       "s.pair.copy": "Skopiuj link do parowania",
       "s.pair.expired": "Zamknij i zacznij od nowa.",
-      "s.pair.expires": "Wygasa w ciągu {time}."
+      "s.pair.expires": "Wygasa w ciągu {time}.",
+      "s.ollama.title": "Ollama Cloud",
+      "s.ollama.key": "Klucz API",
     },
     "catalog": {
       "Only this category (its category in Settings; empty = all)": "Tylko ta kategoria (jej kategoria w Ustawieniach; puste = wszystkie)",
@@ -9431,7 +9467,9 @@ window.PhoneBoxLocaleData = Object.assign(window.PhoneBoxLocaleData || {}, {
       "🔔 Doorbell → notification": "🔔 Dzwonek → powiadomienie",
       "🔥 CPU busy → notification": "🔥 CPU zajęty → powiadomienie",
       "🔴 On air while the mic is on": "🔴 Na powietrzu, gdy mikrofon jest włączony",
-      "🕙 Evenings → calm page": "ę Wieczory → spokojna strona"
+      "🕙 Evenings → calm page": "ę Wieczory → spokojna strona",
+      "Ollama Cloud": "Ollama Cloud",
+      "Ollama Cloud plan, credit balance, what the last day and week cost and how long the balance lasts at that rate.": "Plan Ollama Cloud, saldo kredytów, koszt ostatniego dnia i tygodnia oraz jak długo wystarczy saldo w tym tempie.",
     },
     "panel": {
       "% load": "% obciążenia",
@@ -9709,6 +9747,7 @@ window.PhoneBoxLocaleData = Object.assign(window.PhoneBoxLocaleData || {}, {
       "{n}% power": "{n}% mocy",
       "{n}-day": "{n} -day",
       "{n}-hour": "{n} - godzina"
+,      "Add an Ollama API key in Settings › General": "Dodaj klucz API Ollama w Ustawienia › Ogólne",
     }
   },
   "ru": {
@@ -10125,7 +10164,9 @@ window.PhoneBoxLocaleData = Object.assign(window.PhoneBoxLocaleData || {}, {
       "s.pair.noHosts": "На этом компьютере не было найдено адресов LAN или Tailscale, поэтому телефону не к чему подключаться.",
       "s.pair.copy": "Копировать ссылку на парирование",
       "s.pair.expired": "Истек срок действия. Закройте и начните заново.",
-      "s.pair.expires": "Истечение в {time} ."
+      "s.pair.expires": "Истечение в {time} .",
+      "s.ollama.title": "Ollama Cloud",
+      "s.ollama.key": "Ключ API",
     },
     "catalog": {
       "Only this category (its category in Settings; empty = all)": "Только эта категория (её категория в настройках; пусто = все)",
@@ -10814,7 +10855,9 @@ window.PhoneBoxLocaleData = Object.assign(window.PhoneBoxLocaleData || {}, {
       "🔔 Doorbell → notification": "🔔 Дверной звонок → уведомление",
       "🔥 CPU busy → notification": "🔥 CPU занят → уведомление",
       "🔴 On air while the mic is on": "🔴 На воздухе, пока микрофон включен",
-      "🕙 Evenings → calm page": "Вечер → тишина страница"
+      "🕙 Evenings → calm page": "Вечер → тишина страница",
+      "Ollama Cloud": "Ollama Cloud",
+      "Ollama Cloud plan, credit balance, what the last day and week cost and how long the balance lasts at that rate.": "Тариф Ollama Cloud, баланс кредитов, расход за последние сутки и неделю и на сколько дней хватит баланса в таком темпе.",
     },
     "panel": {
       "% load": "% нагрузки",
@@ -11092,6 +11135,7 @@ window.PhoneBoxLocaleData = Object.assign(window.PhoneBoxLocaleData || {}, {
       "{n}% power": "{n} % мощность",
       "{n}-day": "{n} - день",
       "{n}-hour": "{n} -час"
+,      "Add an Ollama API key in Settings › General": "Добавьте ключ API Ollama в Настройки › Общие",
     }
   },
   "el": {
@@ -11103,7 +11147,9 @@ window.PhoneBoxLocaleData = Object.assign(window.PhoneBoxLocaleData || {}, {
       "s.pair.noHosts": "Όχι. LAN ή Tailscale Δεν βρέθηκε διεύθυνση σε αυτόν τον υπολογιστή, επομένως το τηλέφωνο δεν έχει τίποτα να συνδεθεί.",
       "s.pair.copy": "Αντιγράψτε τον σύνδεσμο αντιστοίχισης",
       "s.pair.expired": "Κλείστε και ξεκινήστε ξανά.",
-      "s.pair.expires": "Λήγει σε 1 ημέρα {time}."
+      "s.pair.expires": "Λήγει σε 1 ημέρα {time}.",
+      "s.ollama.title": "Ollama Cloud",
+      "s.ollama.key": "Κλειδί API",
     },
     "catalog": {
       "1": "1",
@@ -11112,7 +11158,9 @@ window.PhoneBoxLocaleData = Object.assign(window.PhoneBoxLocaleData || {}, {
       "Control the PC cursor, tap to click, hold to drag, edge scroll bar, two fingers to right-click and scroll (Windows and Linux).": "Ελέγξτε τον δρομέα του υπολογιστή, πατήστε για να κάνετε κλικ, κρατήστε πατημένο για να σύρετε, γραμμή κύλισης άκρης, δύο δάχτυλα για δεξί κλικ και κύλιση (Windows και Linux).",
       "Lights up while the microphone or camera is in use (Windows, Linux), OBS records or streams, or a pushed value is on.": "Ανάβει όταν το μικρόφωνο ή η κάμερα είναι σε χρήση (Windows , Linux), OBS καταγράφει ή ρέει, ή μια τιμή που έχει ωθηθεί είναι ενεργοποιημένη.",
       "Sound volume (%)": "Ήχος όγκου (%)",
-      "TRY": "ΤΡΙ"
+      "TRY": "ΤΡΙ",
+      "Ollama Cloud": "Ollama Cloud",
+      "Ollama Cloud plan, credit balance, what the last day and week cost and how long the balance lasts at that rate.": "Πλάνο Ollama Cloud, υπόλοιπο πιστώσεων, κόστος της τελευταίας ημέρας και εβδομάδας και πόσο διαρκεί το υπόλοιπο με αυτόν τον ρυθμό.",
     },
     "panel": {
       "% load": "% φορτίου",
@@ -11390,6 +11438,7 @@ window.PhoneBoxLocaleData = Object.assign(window.PhoneBoxLocaleData || {}, {
       "{n}% power": "{n}% δύναμη",
       "{n}-day": "{n}-Μέρα",
       "{n}-hour": "{n}- ώρα"
+,      "Add an Ollama API key in Settings › General": "Προσθέστε ένα κλειδί API Ollama στις Ρυθμίσεις › Γενικά",
     }
   },
   "vi": {
@@ -11401,7 +11450,9 @@ window.PhoneBoxLocaleData = Object.assign(window.PhoneBoxLocaleData || {}, {
       "s.pair.noHosts": "Không có địa chỉ LAN hay Tailscale được tìm thấy trên máy tính này, vì vậy điện thoại không có gì để kết nối.",
       "s.pair.copy": "Sao chép liên kết cặp",
       "s.pair.expired": "Đóng và bắt đầu lại.",
-      "s.pair.expires": "Hết hạn trong {time} ."
+      "s.pair.expires": "Hết hạn trong {time} .",
+      "s.ollama.title": "Hạn mức Ollama Cloud",
+      "s.ollama.key": "Khóa API",
     },
     "catalog": {
       "1": "1",
@@ -11410,7 +11461,9 @@ window.PhoneBoxLocaleData = Object.assign(window.PhoneBoxLocaleData || {}, {
       "Control the PC cursor, tap to click, hold to drag, edge scroll bar, two fingers to right-click and scroll (Windows and Linux).": "Kiểm soát con trỏ PC, nhấn để click, giữ để kéo, thanh cuộn cạnh, hai ngón tay để click phải và cuộn (Windows và Linux).",
       "Lights up while the microphone or camera is in use (Windows, Linux), OBS records or streams, or a pushed value is on.": "Đèn sáng khi microphone hoặc camera đang được sử dụng (Windows, Linux), OBS ghi lại hoặc truyền đi, hoặc một giá trị đẩy được bật.",
       "Sound volume (%)": "Độ lớn âm thanh (%)",
-      "TRY": "TRY"
+      "TRY": "TRY",
+      "Ollama Cloud": "Hạn mức Ollama Cloud",
+      "Ollama Cloud plan, credit balance, what the last day and week cost and how long the balance lasts at that rate.": "Gói Ollama Cloud, số dư tín dụng, chi phí ngày và tuần qua và số dư còn dùng được bao lâu với tốc độ này.",
     },
     "panel": {
       "% load": "% tải",
@@ -11688,6 +11741,7 @@ window.PhoneBoxLocaleData = Object.assign(window.PhoneBoxLocaleData || {}, {
       "{n}% power": "{n}% năng lượng",
       "{n}-day": "{n} - ngày",
       "{n}-hour": "{n} - giờ"
+,      "Add an Ollama API key in Settings › General": "Thêm khóa API Ollama trong Cài đặt › Chung",
     }
   },
   "zh": {
@@ -12104,7 +12158,9 @@ window.PhoneBoxLocaleData = Object.assign(window.PhoneBoxLocaleData || {}, {
       "s.pair.noHosts": "此计算机上没有找到 LAN 或 Tailscale 地址,因此手机无法连接。",
       "s.pair.copy": "复制配对链接",
       "s.pair.expired": "请关闭浏览器并重新开始。",
-      "s.pair.expires": "届满日期 {time}."
+      "s.pair.expires": "届满日期 {time}.",
+      "s.ollama.title": "Ollama Cloud",
+      "s.ollama.key": "API 密钥",
     },
     "catalog": {
       "Only this category (its category in Settings; empty = all)": "仅此分类（设置中的分类；留空 = 全部）",
@@ -12793,7 +12849,9 @@ window.PhoneBoxLocaleData = Object.assign(window.PhoneBoxLocaleData || {}, {
       "🔔 Doorbell → notification": "门铃 → 通知",
       "🔥 CPU busy → notification": "🔥 CPU 忙碌 → 通知",
       "🔴 On air while the mic is on": "🔴 在麦克风打开时在空中",
-      "🕙 Evenings → calm page": "晚上 → 平静的页面"
+      "🕙 Evenings → calm page": "晚上 → 平静的页面",
+      "Ollama Cloud": "Ollama Cloud",
+      "Ollama Cloud plan, credit balance, what the last day and week cost and how long the balance lasts at that rate.": "Ollama Cloud 套餐、余额、最近一天和一周的花费，以及按此速度余额还能用多久。",
     },
     "panel": {
       "% load": "负载%",
@@ -13071,6 +13129,7 @@ window.PhoneBoxLocaleData = Object.assign(window.PhoneBoxLocaleData || {}, {
       "{n}% power": "{n}电力%",
       "{n}-day": "{n}日",
       "{n}-hour": "{n}时间"
+,      "Add an Ollama API key in Settings › General": "在“设置 › 通用”中添加 Ollama API 密钥",
     }
   }
 });

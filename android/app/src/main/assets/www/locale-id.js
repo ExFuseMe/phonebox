@@ -878,7 +878,9 @@ window.PhoneBoxLocaleData = Object.assign(window.PhoneBoxLocaleData || {}, {
       "s.pair.noHosts": "Tidak ada alamat LAN atau Tailscale ditemukan pada komputer ini, jadi telepon tidak memiliki apa-apa untuk terhubung.",
       "s.pair.copy": "Salin tautan pasangan",
       "s.pair.expired": "Luput. Tutup dan mulai lagi.",
-      "s.pair.expires": "Berakhir dalam {time} ."
+      "s.pair.expires": "Berakhir dalam {time} .",
+      "s.ollama.title": "Ollama Cloud",
+      "s.ollama.key": "Kunci API",
     },
     "catalog": {
       "Only this category (its category in Settings; empty = all)": "Hanya kategori ini (kategorinya di Pengaturan; kosong = semua)",
@@ -1572,7 +1574,9 @@ window.PhoneBoxLocaleData = Object.assign(window.PhoneBoxLocaleData || {}, {
       "🔔 Doorbell → notification": "🔔 Doorbell → notification",
       "🔥 CPU busy → notification": "🔥 CPU sibuk → notifikasi",
       "🔴 On air while the mic is on": "🔴 Di udara saat mikrofon menyala",
-      "🕙 Evenings → calm page": ". Malam → halaman tenang"
+      "🕙 Evenings → calm page": ". Malam → halaman tenang",
+      "Ollama Cloud": "Ollama Cloud",
+      "Ollama Cloud plan, credit balance, what the last day and week cost and how long the balance lasts at that rate.": "Paket Ollama Cloud, saldo kredit, biaya sehari dan seminggu terakhir, dan berapa lama saldo bertahan pada laju ini.",
     },
     "panel": {
       "% load": "% muatan",
@@ -1850,6 +1854,7 @@ window.PhoneBoxLocaleData = Object.assign(window.PhoneBoxLocaleData || {}, {
       "{n}% power": "{n}% power",
       "{n}-day": "{n} -day",
       "{n}-hour": "{n} - jam"
+,      "Add an Ollama API key in Settings › General": "Tambahkan kunci API Ollama di Pengaturan › Umum",
     }
   }
 });

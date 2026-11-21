@@ -878,7 +878,9 @@ window.PhoneBoxLocaleData = Object.assign(window.PhoneBoxLocaleData || {}, {
       "s.pair.noHosts": "На цьому комп’ ютері не знайдено адрес LAN або Tailscale, отже телефону немає з чим з' єднатися.",
       "s.pair.copy": "Скопіювати посилання на парування",
       "s.pair.expired": "Застаріло. Закрити і запустити знову.",
-      "s.pair.expires": "Закінчується через {time} ."
+      "s.pair.expires": "Закінчується через {time} .",
+      "s.ollama.title": "Ollama Cloud",
+      "s.ollama.key": "Ключ API",
     },
     "catalog": {
       "Only this category (its category in Settings; empty = all)": "Лише ця категорія (її категорія в налаштуваннях; порожньо = усі)",
@@ -1572,7 +1574,9 @@ window.PhoneBoxLocaleData = Object.assign(window.PhoneBoxLocaleData || {}, {
       "🔔 Doorbell → notification": "🔔 Дзвінок → сповіщення",
       "🔥 CPU busy → notification": "🔥 CPU зайнятий → сповіщення",
       "🔴 On air while the mic is on": "🔴 В ефірі, коли мікрофон ввімкнено",
-      "🕙 Evenings → calm page": "Вечірні → спокійна сторінка"
+      "🕙 Evenings → calm page": "Вечірні → спокійна сторінка",
+      "Ollama Cloud": "Ollama Cloud",
+      "Ollama Cloud plan, credit balance, what the last day and week cost and how long the balance lasts at that rate.": "Тариф Ollama Cloud, баланс кредитів, витрати за останню добу й тиждень і на скільки днів вистачить балансу за такого темпу.",
     },
     "panel": {
       "% load": "% завантаження",
@@ -1850,6 +1854,7 @@ window.PhoneBoxLocaleData = Object.assign(window.PhoneBoxLocaleData || {}, {
       "{n}% power": "{n}% потужності",
       "{n}-day": "{n}- день",
       "{n}-hour": "{n}- годин"
+,      "Add an Ollama API key in Settings › General": "Додайте ключ API Ollama у Налаштування › Загальні",
     }
   }
 });

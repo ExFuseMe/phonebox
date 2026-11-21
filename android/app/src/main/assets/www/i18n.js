@@ -300,7 +300,7 @@
       'w.processes': 'Processes',
       'w.memory': 'Memory',
       'w.noOpenSessions': 'No open sessions',
-      'w.noAiSessions': 'No Claude Code / Codex / Cursor / OpenCode / Antigravity sessions open',
+      'w.noAiSessions': 'No Claude Code / Codex / Cursor / OpenCode / Antigravity / DeepSeek Harness sessions open',
       'w.note.cancel': 'Cancel',
       'w.note.save': 'Save',
       'w.note.failed': 'Could not save',
@@ -446,6 +446,8 @@
       's.antigravity.hint': 'Show recent Antigravity chats on the AI sessions widget (off by default). Only step metadata and token counters are kept; prompts, replies and tool arguments are never shown, stored or sent.',
       's.antigravity.sessions': 'Show Antigravity sessions',
       's.antigravity.shareSessionTitles': 'Show Antigravity chat titles on the phone (Antigravity draws them from the conversation)',
+      's.ollama.title': 'Ollama Cloud',
+      's.ollama.key': 'API key',
       's.opencode.hint': 'OpenCode permission prompts and agent questions reach the phone while its background service is running. Off until you turn it on here. Allow always saves the requested pattern for the project, so it arms only after a short countdown.',
       's.opencode.askOnPhone': 'Ask on the phone',
       's.opencode.sessions': 'Show OpenCode sessions',
@@ -10685,6 +10687,7 @@
       'Recent tool': 'Ferramenta recente',
       'Ping {ms} · loss {loss}%': 'Ping {ms} · perda {loss}%',
       'Up ': 'Ligado há ',
+      "Add an Ollama API key in Settings › General": "Adicione uma chave de API da Ollama em Configurações › Geral",
     },
   };
 

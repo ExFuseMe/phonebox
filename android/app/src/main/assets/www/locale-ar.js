@@ -878,7 +878,9 @@ window.PhoneBoxLocaleData = Object.assign(window.PhoneBoxLocaleData || {}, {
       "s.pair.noHosts": "لم يتم العثور على عنوان LAN أو Tailscale في هذا الحاسوب، لذا ليس للهاتف أي شيء يرتبط به.",
       "s.pair.copy": "نسخ رابط الإتصال",
       "s.pair.expired": "انتهى أجله، أغلق وبدأ من جديد",
-      "s.pair.expires": "تنتهي صلاحيتها في {time}"
+      "s.pair.expires": "تنتهي صلاحيتها في {time}",
+      "s.ollama.title": "Ollama Cloud",
+      "s.ollama.key": "مفتاح API",
     },
     "catalog": {
       "Only this category (its category in Settings; empty = all)": "هذه الفئة فقط (فئتها في الإعدادات؛ فارغ = الكل)",
@@ -1572,7 +1574,9 @@ window.PhoneBoxLocaleData = Object.assign(window.PhoneBoxLocaleData || {}, {
       "🔔 Doorbell → notification": "إخطار",
       "🔥 CPU busy → notification": "🔥 CPU مشغول → إخطار",
       "🔴 On air while the mic is on": "🔴 على الهواء بينما الميكروفون يعمل",
-      "🕙 Evenings → calm page": "مساءً → صفحة هادئة"
+      "🕙 Evenings → calm page": "مساءً → صفحة هادئة",
+      "Ollama Cloud": "Ollama Cloud",
+      "Ollama Cloud plan, credit balance, what the last day and week cost and how long the balance lasts at that rate.": "خطة Ollama Cloud، رصيد الأرصدة، تكلفة اليوم والأسبوع الماضيين، وكم يومًا يكفي الرصيد بهذا المعدل.",
     },
     "panel": {
       "% load": "النسبة المئوية للحمولة",
@@ -1850,6 +1854,7 @@ window.PhoneBoxLocaleData = Object.assign(window.PhoneBoxLocaleData || {}, {
       "{n}% power": "{n}النسبة المئوية للقوة",
       "{n}-day": "{n}يوم",
       "{n}-hour": "{n}-ساعة"
+,      "Add an Ollama API key in Settings › General": "أضف مفتاح API من Ollama في الإعدادات › عام",
     }
   }
 });

@@ -23,6 +23,8 @@ public sealed class AgentConfig
     public CursorConfig Cursor { get; set; } = new();
     /// <summary>Antigravity chats on the AI sessions widget (off by default).</summary>
     public AntigravityConfig Antigravity { get; set; } = new();
+    /// <summary>Ollama Cloud for the Ollama widget: the API key stays on this computer and never goes to the phone.</summary>
+    public OllamaConfig Ollama { get; set; } = new();
     /// <summary>OpenCode prompts and sessions on the phone; everything is off until the settings page turns it on.</summary>
     [JsonPropertyName("opencode")]
     public OpenCodeConfig OpenCode { get; set; } = new();
@@ -268,6 +270,12 @@ public sealed class AntigravityConfig
     public bool Sessions { get; set; }
     /// <summary>Show each Antigravity chat's title from its local annotation file on the phone (off by default).</summary>
     public bool ShareSessionTitles { get; set; }
+}
+
+public sealed class OllamaConfig
+{
+    /// <summary>An ollama.com API key, created at ollama.com/settings/keys. Empty hides the Ollama widget's numbers.</summary>
+    public string? ApiKey { get; set; }
 }
 
 public sealed class OpenCodeConfig
@@ -643,6 +651,8 @@ public sealed partial class ConfigStore(string path)
         c.Claude.TimeoutSec = Math.Clamp(c.Claude.TimeoutSec, 10, 3600);
         c.Cursor ??= new();
         c.Antigravity ??= new();
+        c.Ollama ??= new();
+        c.Ollama.ApiKey = string.IsNullOrWhiteSpace(c.Ollama.ApiKey) ? null : c.Ollama.ApiKey.Trim();
         c.OpenCode ??= new();
         c.OpenCode.TimeoutSec = Math.Clamp(c.OpenCode.TimeoutSec, 10, 3600);
         c.OpenCode.AlwaysCountdownSec = Math.Clamp(c.OpenCode.AlwaysCountdownSec, 0, 60);

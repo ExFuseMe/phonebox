@@ -878,7 +878,9 @@ window.PhoneBoxLocaleData = Object.assign(window.PhoneBoxLocaleData || {}, {
       "s.pair.noHosts": "このコンピュータには LAN または Tailscale アドレスが見つかりません。 だから、電話は接続できません。",
       "s.pair.copy": "ペアリングリンクをコピー",
       "s.pair.expired": "期限切れです。閉じて再起動してください。",
-      "s.pair.expires": "期限は {time} です。"
+      "s.pair.expires": "期限は {time} です。",
+      "s.ollama.title": "Ollama Cloud",
+      "s.ollama.key": "API キー",
     },
     "catalog": {
       "Only this category (its category in Settings; empty = all)": "このカテゴリのみ（設定でのカテゴリ。空欄 = すべて）",
@@ -1572,7 +1574,9 @@ window.PhoneBoxLocaleData = Object.assign(window.PhoneBoxLocaleData || {}, {
       "🔔 Doorbell → notification": "ドアベル→通知",
       "🔥 CPU busy → notification": "🔥 CPU ビジー→通知",
       "🔴 On air while the mic is on": "マイクがオンのまま放送中",
-      "🕙 Evenings → calm page": "夕方→静かなページ"
+      "🕙 Evenings → calm page": "夕方→静かなページ",
+      "Ollama Cloud": "Ollama Cloud",
+      "Ollama Cloud plan, credit balance, what the last day and week cost and how long the balance lasts at that rate.": "Ollama Cloud のプラン、クレジット残高、直近1日と1週間の費用、このペースで残高がもつ日数。",
     },
     "panel": {
       "% load": "負荷の %",
@@ -1850,6 +1854,7 @@ window.PhoneBoxLocaleData = Object.assign(window.PhoneBoxLocaleData || {}, {
       "{n}% power": "{n}電力の%",
       "{n}-day": "{n}あっ あの...。",
       "{n}-hour": "{n}1時間"
+,      "Add an Ollama API key in Settings › General": "「設定 › 一般」で Ollama の API キーを追加",
     }
   }
 });

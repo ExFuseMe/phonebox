@@ -878,7 +878,9 @@ window.PhoneBoxLocaleData = Object.assign(window.PhoneBoxLocaleData || {}, {
       "s.pair.noHosts": "이 컴퓨터에서 LAN 또는 Tailscale 주소를 찾을 수 없으므로 전화기가 연결할 수 있는 곳이 없습니다.",
       "s.pair.copy": "페어링 링크 복사",
       "s.pair.expired": "닫고 다시 시작하세요.",
-      "s.pair.expires": "만료일 {time}."
+      "s.pair.expires": "만료일 {time}.",
+      "s.ollama.title": "Ollama Cloud",
+      "s.ollama.key": "API 키",
     },
     "catalog": {
       "Only this category (its category in Settings; empty = all)": "이 분류만 (설정의 분류, 비우면 전체)",
@@ -1572,7 +1574,9 @@ window.PhoneBoxLocaleData = Object.assign(window.PhoneBoxLocaleData || {}, {
       "🔔 Doorbell → notification": "🔔 도어벨 → 알림",
       "🔥 CPU busy → notification": "🔥 CPU 바쁜 → 알림",
       "🔴 On air while the mic is on": "마이크가 켜져 있는 동안 공기에",
-      "🕙 Evenings → calm page": "에어비앤비 호텔 → calm page"
+      "🕙 Evenings → calm page": "에어비앤비 호텔 → calm page",
+      "Ollama Cloud": "Ollama Cloud",
+      "Ollama Cloud plan, credit balance, what the last day and week cost and how long the balance lasts at that rate.": "Ollama Cloud 요금제, 크레딧 잔액, 지난 하루와 일주일 비용, 이 속도로 잔액이 버티는 기간.",
     },
     "panel": {
       "% load": "부하%",
@@ -1850,6 +1854,7 @@ window.PhoneBoxLocaleData = Object.assign(window.PhoneBoxLocaleData || {}, {
       "{n}% power": "{n}전원%",
       "{n}-day": "{n}- 하루",
       "{n}-hour": "{n}- 시간"
+,      "Add an Ollama API key in Settings › General": "설정 › 일반에서 Ollama API 키 추가",
     }
   }
 });

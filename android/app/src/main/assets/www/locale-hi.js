@@ -878,7 +878,9 @@ window.PhoneBoxLocaleData = Object.assign(window.PhoneBoxLocaleData || {}, {
       "s.pair.noHosts": "इस कम्प्यूटर पर कोई LAN या Tailscale पता नहीं मिला, अतः फोन में कनेक्ट करने के लिए कुछ भी नहीं है.",
       "s.pair.copy": "जोड़ी लिंक की नक़ल लें",
       "s.pair.expired": "मियाद ख़त्म. बंद करें तथा फिर से प्रारंभ करें.",
-      "s.pair.expires": "में ख़त्म होता है {time}."
+      "s.pair.expires": "में ख़त्म होता है {time}.",
+      "s.ollama.title": "Ollama Cloud",
+      "s.ollama.key": "API कुंजी",
     },
     "catalog": {
       "Only this category (its category in Settings; empty = all)": "केवल यह श्रेणी (सेटिंग्स में इसकी श्रेणी; खाली = सभी)",
@@ -1572,7 +1574,9 @@ window.PhoneBoxLocaleData = Object.assign(window.PhoneBoxLocaleData || {}, {
       "🔔 Doorbell → notification": "सूचना",
       "🔥 CPU busy → notification": "🔥 CPU व्यस्त → अधिसूचना",
       "🔴 On air while the mic is on": "🔴 जब तक माइक चालू है तब तक एयर पर",
-      "🕙 Evenings → calm page": "अमेज़न पर गूगल पे"
+      "🕙 Evenings → calm page": "अमेज़न पर गूगल पे",
+      "Ollama Cloud": "Ollama Cloud",
+      "Ollama Cloud plan, credit balance, what the last day and week cost and how long the balance lasts at that rate.": "Ollama Cloud प्लान, क्रेडिट शेष, पिछले दिन और हफ़्ते का खर्च, और इस दर पर शेष कितने दिन चलेगा।",
     },
     "panel": {
       "% load": "लोड%",
@@ -1850,6 +1854,7 @@ window.PhoneBoxLocaleData = Object.assign(window.PhoneBoxLocaleData || {}, {
       "{n}% power": "{n}% पावर",
       "{n}-day": "{n}दिन",
       "{n}-hour": "{n} - घंटे"
+,      "Add an Ollama API key in Settings › General": "सेटिंग्स › सामान्य में Ollama API कुंजी जोड़ें",
     }
   }
 });

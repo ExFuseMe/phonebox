@@ -878,7 +878,9 @@ window.PhoneBoxLocaleData = Object.assign(window.PhoneBoxLocaleData || {}, {
       "s.pair.noHosts": "V tomto počítači nebyla nalezena žádná adresa LAN nebo Tailscale, takže telefon nemá k čemu se připojit.",
       "s.pair.copy": "Zkopírujte párovací odkaz",
       "s.pair.expired": "Zavřete a zkuste to znovu.",
-      "s.pair.expires": "Expires in 10 dny {time}."
+      "s.pair.expires": "Expires in 10 dny {time}.",
+      "s.ollama.title": "Ollama Cloud",
+      "s.ollama.key": "Klíč API",
     },
     "catalog": {
       "Only this category (its category in Settings; empty = all)": "Jen tato kategorie (její kategorie v Nastavení; prázdné = všechny)",
@@ -1572,7 +1574,9 @@ window.PhoneBoxLocaleData = Object.assign(window.PhoneBoxLocaleData || {}, {
       "🔔 Doorbell → notification": "🔔 Zvonek → oznámení",
       "🔥 CPU busy → notification": "🔥 CPU zaneprázdněn → upozornění",
       "🔴 On air while the mic is on": "🔴 Na vzduchu, zatímco mikrofon je zapnutý",
-      "🕙 Evenings → calm page": "ut Večery → klidná stránka"
+      "🕙 Evenings → calm page": "ut Večery → klidná stránka",
+      "Ollama Cloud": "Ollama Cloud",
+      "Ollama Cloud plan, credit balance, what the last day and week cost and how long the balance lasts at that rate.": "Tarif Ollama Cloud, zůstatek kreditů, cena za poslední den a týden a jak dlouho zůstatek při tomto tempu vydrží.",
     },
     "panel": {
       "% load": "% zatížení",
@@ -1850,6 +1854,7 @@ window.PhoneBoxLocaleData = Object.assign(window.PhoneBoxLocaleData || {}, {
       "{n}% power": "{n} % výkonu",
       "{n}-day": "{n} -day",
       "{n}-hour": "{n} - hodina"
+,      "Add an Ollama API key in Settings › General": "Přidejte klíč API Ollama v Nastavení › Obecné",
     }
   }
 });

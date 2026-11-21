@@ -786,6 +786,13 @@ nav a.on::before { color: var(--accent); }
       </div>
 
       <div class="card">
+        <h3 data-i18n="s.ollama.title">Ollama Cloud</h3>
+        <p class="hint" style="margin:0 0 12px"><a href="https://ollama.com/settings/keys" target="_blank" rel="noopener">ollama.com/settings/keys</a></p>
+        <label for="ollamaKeyInput" data-i18n="s.ollama.key">API key</label>
+        <input id="ollamaKeyInput" type="password" data-bind="ollama.apiKey" autocomplete="off" placeholder="ollama.com/settings/keys">
+      </div>
+
+      <div class="card">
         <h3 data-i18n="s.approvals.title">AI coding agent permission prompts</h3>
         <p class="hint" style="margin:0 0 12px" data-i18n-html="s.approvals.hint">When Codex or Claude Code asks for permission, the phone shows the request with <b>Allow</b> and <b>Deny</b>. Install the hook for each agent you use; existing hook files are preserved and backed up.</p>
         <div class="row" style="margin-bottom:8px"><b style="min-width:92px" data-i18n="s.approvals.codex">Codex</b><button class="btn" id="codexHookBtn" data-i18n="s.claude.installHook">Install hook</button><span class="hint" id="codexHookState"></span></div>
@@ -3531,6 +3538,7 @@ function fillDefaults() {
     showSeconds: true, vibrate: true, finishToast: true, volumeKeys: true, artTint: true, proximityWake: true, orientation: 'landscape', theme: 'default', accent: '#2dd4bf' })) cfg.display[k] ??= v;
   cfg.charge ??= { enabled: false, min: 50, max: 80, method: 'ha' };
   cfg.steam ??= { enabled: false };
+  cfg.ollama ??= { apiKey: null };
 }
 
 async function load() {

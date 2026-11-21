@@ -1194,3 +1194,83 @@ W.gpu = {
     };
   },
 };
+
+// ---------------------------------------------------------------- ollama cloud
+// The Ollama Cloud account from /api/state.ollama: plan, credit balance, what the last day and week cost and how long
+// the balance lasts at that rate. The agent reads ollama.com with the API key from Settings › General, so the phone
+// never sees the key; no key means no request at all.
+W.ollama = {
+  needs: ['state'],
+  create(box) {
+    box.style.setProperty('--c', '#cbd5e1');
+    const upd = h('span', 'ol-upd');
+    const plan = h('span', 'ol-plan');
+    const head = h('div', 'w-head', h('span', 'w-title', emo('🦙'), ' ' + t('s.ollama.title')), plan, upd);
+    const bal = h('b', 'ol-bal', '—');
+    const cap = h('span', 'ol-cap');
+    const bars = h('div', 'ol-bars');
+    // Labels stay short and numeric so the widget needs no per-language words besides the one hint below.
+    const stat = (label) => {
+      const value = h('b', null, '—');
+      return { value, el: h('div', 'ol-stat', value, h('span', null, label)) };
+    };
+    const day = stat('24h'), week = stat('7d'), left = stat('d'), req = stat('req');
+    const stats = h('div', 'ol-stats', day.el, week.el, left.el, req.el);
+    const foot = h('div', 'ol-foot');
+    const main = h('div', 'ol-main', h('div', 'ol-hero', bal, cap), bars);
+    const empty = h('div', 'empty ol-empty');
+    box.append(head, empty, main, stats, foot);
+
+    const money = (v) => {
+      try { return new Intl.NumberFormat(LOCALE, { style: 'currency', currency: 'USD', maximumFractionDigits: 2 }).format(v || 0); }
+      catch (_) { return '$' + (v || 0).toFixed(2); }
+    };
+    const count = (n) => Number(n || 0).toLocaleString(LOCALE);
+
+    return {
+      update() {
+        const ol = D.state?.ollama;
+        const show = (on) => {
+          main.style.display = on ? '' : 'none';
+          stats.style.display = on ? '' : 'none';
+          empty.style.display = on ? 'none' : '';
+        };
+        if (!ol) {
+          plan.textContent = ''; upd.textContent = ''; foot.textContent = '';
+          empty.textContent = tp('Add an Ollama API key in Settings › General');
+          show(false);
+          return;
+        }
+        upd.textContent = ol.updatedAt ? fmtDur(Math.max(0, Date.now() - ol.updatedAt)) + ' ago' : '';
+        plan.textContent = ol.plan || '';
+        const numbers = !!(ol.requests7d || ol.availableUsd || ol.dayUsd || ol.weekUsd) || (ol.updatedAt && !ol.error);
+        if (!numbers) {
+          empty.textContent = ol.error || t('sess.waitingData');
+          foot.textContent = '';
+          show(false);
+          return;
+        }
+        show(true);
+        bal.textContent = money(ol.availableUsd);
+        // A paid plan has included credits; on pay as you go the balance is all there is.
+        cap.textContent = ol.allowanceUsd > 0 ? money(ol.includedLeftUsd) + ' / ' + money(ol.allowanceUsd) : 'USD';
+        day.value.textContent = money(ol.dayUsd);
+        week.value.textContent = money(ol.weekUsd);
+        left.value.textContent = ol.runwayDays == null ? '—' : count(ol.runwayDays);
+        req.value.textContent = count(ol.requests24h);
+        const hours = ol.hours || [];
+        if (bars.childElementCount !== hours.length) bars.replaceChildren(...hours.map(() => h('i')));
+        const max = Math.max(...hours, 0.0001);
+        hours.forEach((v, i) => {
+          const bar = bars.children[i];
+          if (!bar) return;
+          bar.style.height = Math.max(4, Math.round((v / max) * 100)) + '%';
+          bar.classList.toggle('zero', !(v > 0));
+        });
+        foot.replaceChildren(
+          h('span', null, ol.burnPerDay ? money(ol.burnPerDay) + ' / 24h' : '—'),
+          ol.error ? h('span', 'q-err', ol.error) : h('span'));
+      },
+    };
+  },
+};

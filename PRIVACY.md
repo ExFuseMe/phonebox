@@ -53,6 +53,11 @@ Last updated: 2026-11-20 (PhoneBox 0.9.6).
   are kept; prompts, replies, thinking and tool arguments are never shown, stored or sent. Titles reach the phone only
   while **Show Antigravity chat titles on the phone** is also on; otherwise the widget shows the project name or
   `Antigravity`. Turning the setting off stops the scan.
+- **DeepSeek Harness sessions**: like Codex's rollout files, DSH's own session projection under
+  `~/.dsh/storages/session_projcache/sessions` is read without a switch (about every 30 seconds for discovery). Only the
+  model, working folder, status, timestamps and token counters are read; the prompt, reply draft, plan, title and tool
+  arguments that sit in the same file are never parsed, shown, stored or sent — the phone shows the folder and a short
+  session id instead of a title. Nothing is sent anywhere: the session list goes only to your paired phone.
 - **OpenCode sessions (off by default):** with Settings › General › "Show OpenCode sessions" on, the agent asks
   OpenCode's own background service — the native one, and the one inside each running WSL distro — for its recent
   sessions: the same local HTTP API the desktop app uses, authenticated with the password OpenCode wrote to
@@ -110,6 +115,7 @@ identifies your GitHub account to GitHub.
 | Weather (phone) | `api.open-meteo.com`, every 15 minutes | The coordinates of the city you chose (Tallinn by default), and the forecast model when one is picked in **Settings › General › Weather** | From 0.9.6: asked only while a page has a widget that shows the weather (weather, forecast, sun & moon, a clock with its weather line, or a Custom HTML widget, which gets the weather too); remove those, or turn off the clock's weather line. 0.9.5 and earlier: asked while the panel runs; choose a city you are comfortable sharing in **Settings › General › Weather** |
 | Air quality widget (phone) | `air-quality-api.open-meteo.com`, while the widget is on a page | The same coordinates | Remove the widget |
 | City search (settings page) | `geocoding-api.open-meteo.com` | The city name you type, only when you search | Don't search |
+| Ollama Cloud widget | `ollama.com` (`/api/me`, `/api/balance`, `/api/usage?range=24h` and `?range=7d`), about every 3 minutes, only while an API key is saved in **Settings › General › Ollama Cloud** | The API key you created at ollama.com/settings/keys in the `Authorization` header; ollama.com answers with your plan, credit balance and usage totals, which the agent keeps in memory and sends only to your paired phone | Clear the API key in **Settings › General › Ollama Cloud** (or remove the widget and the key) to stop the requests |
 | Claude quota | `api.anthropic.com/api/oauth/usage`, every 3 minutes after a successful check (sooner after a failed one, as often as every 30 seconds while the network is down; less often when Anthropic asks it to wait; agents running on this computer share one schedule) while Claude Code is signed in on this computer, whether or not a page shows a quota widget | The OAuth token Claude Code stores in `~/.claude/.credentials.json`, or on macOS, when that file doesn't exist, the "Claude Code-credentials" item from the default keychain search list (normally the login Keychain), read with `security find-generic-password`; read-only, PhoneBox never refreshes it. Only the Claude Code command-line sign-in is used; the Claude Desktop app's own sign-in is never read | No switch yet: it stops when Claude Code is signed out on this computer |
 
 ## Connections made only when you use a feature

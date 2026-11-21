@@ -102,6 +102,9 @@ public sealed partial class SessionMonitor(ILogger<SessionMonitor> log, ConfigSt
             {
                 ClearAntigravityCache();
             }
+            // DeepSeek Harness sessions need no switch, like Codex's: its own projection is local, and only counters,
+            // times, the model and the folder are read (never the conversation rows beside them).
+            try { list.AddRange(ReadDsh()); } catch (Exception ex) { log.LogDebug("dsh sessions: {Msg}", ex.Message); }
             _sessions = list;
             ClaudeTranscript.Trim(list.Where(s => s.Tool == "claude").Select(s => s.Id["claude:".Length..]), config?.Get().Claude.ShareConversation ?? false);
             await Task.Delay(2000, ct);
